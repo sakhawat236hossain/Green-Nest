@@ -1,0 +1,15 @@
+.mySwiper {
+  width: 100%;
+  height: 400px;
+  padding-bottom: 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #15803d; /* Green arrow */
+}
+
+.swiper-pagination-fraction {
+  color: #166534;
+  font-weight: bold;
+}

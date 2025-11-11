@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Sophia Green",
+    "specialization": "Indoor Plant Specialist",
+    "description": "বিশেষ করে ইনডোর প্ল্যান্টের যত্ন, পানি ও আলো ব্যবস্থাপনা নিয়ে কাজ করেন। তাঁর পরামর্শে শত শত মানুষ তাদের গাছকে বাঁচিয়ে রাখতে পেরেছেন।",
+    "image": "https://i.ibb.co.com/67x1kP4n/images-11.jpg"
+  },
+  {
+    "id": 2,
+    "name": "James Leaf",
+    "specialization": "Soil & Fertilizer Expert",
+    "description": "মাটির গঠন, সার ও পুষ্টি ব্যবস্থাপনায় অভিজ্ঞ। তিনি জানেন কোন গাছে কতটা পুষ্টি দরকার এবং কিভাবে সেটা প্রাকৃতিকভাবে দেওয়া যায়।",
+    "image": "https://i.ibb.co.com/27CrXjkf/images-12.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Lina Bloom",
+    "specialization": "Plant Disease Consultant",
+    "description": "গাছের রোগ নির্ণয় ও প্রাকৃতিক চিকিৎসা নিয়ে বিশেষজ্ঞ। তাঁর হাতে অসংখ্য পোকামাকড়ে আক্রান্ত গাছ সুস্থ হয়েছে।",
+    "image": "https://i.ibb.co.com/kgS2gFCV/images-13.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Arif Rahman",
+    "specialization": "Urban Gardening Advisor",
+    "description": "ছাদ বাগান ও ছোট জায়গায় সবুজ পরিবেশ তৈরিতে পারদর্শী। তিনি শহুরে পরিবেশে গাছ লাগানোর নতুন পদ্ধতি শেখান।",
+    "image": "https://i.ibb.co.com/QFvc7d1q/stock-photo-mature-man-beard-teaches-online-while-standing-room-bicycle-plant.webp"
+  }
+]

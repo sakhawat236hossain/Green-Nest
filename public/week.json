@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Plant of the Week: SWEET EMOTION BLAZE® Abelia",
+    "date": "October 24, 2025",
+    "image": "https://i.ibb.co.com/ccsfDXHf/c3db06db67ee7e27618ffc8438e6d535.jpg",
+    "description": "A fragrant flowering shrub known for its pink-white blooms and orange fall foliage. Perfect for sunny gardens and borders."
+  },
+  {
+    "id": 2,
+    "title": "Plant of the Week: SUNJOY TODO® Barberry",
+    "date": "October 17, 2025",
+    "image": "https://i.ibb.co.com/SDfzGqjz/afb6d1c476f3913411889cbb9022b7bf.jpg",
+    "description": "A compact, deep purple barberry with glossy foliage that adds color and structure to landscapes. Drought-tolerant and low maintenance."
+  },
+  {
+    "id": 3,
+    "title": "Plant of the Week: BLACK LACE® Elderberry",
+    "date": "October 10, 2025",
+    "image": "https://i.ibb.co.com/354cy0wv/5d150f34819190359f0878a3249d9360.jpg",
+    "description": "An elegant, dark purple-leaved elderberry with pink flowers. Adds drama and contrast to garden designs."
+  },
+  {
+    "id": 4,
+    "title": "Plant of the Week: PEARL GLAM® Beautyberry",
+    "date": "October 3, 2025",
+    "image": "https://i.ibb.co.com/GvrXyhMz/1e037ec435b8cedc4bb95d989d557a52.jpg",
+    "description": "Features vibrant purple berries in fall with dark foliage. Attracts birds and provides seasonal color."
+  },
+  {
+    "id": 5,
+    "title": "Plant of the Week: FINE WINE® Weigela",
+    "date": "September 26, 2025",
+    "image": "https://i.ibb.co.com/zhKBjfG3/dd99da2f4f14341b7760651dca69afb3.jpg",
+    "description": "Compact shrub with deep burgundy leaves and pink flowers. Ideal for borders and small gardens."
+  },
+  {
+    "id": 6,
+    "title": "Plant of the Week: PINKY WINKY® Hydrangea",
+    "date": "September 19, 2025",
+    "image": "https://i.ibb.co.com/4ZjC61B8/21ed8537104903dbb6012a1023ed6ec0.jpg",
+    "description": "Large two-toned blooms that change from white to pink as the season progresses. Great for cut flowers and landscape accents."
+  },
+  {
+    "id": 7,
+    "title": "Plant of the Week: GOLDEN SHOWERS® Forsythia",
+    "date": "September 12, 2025",
+    "image": "https://i.ibb.co.com/JWxfW44z/f5d306b4a9da8bd6c8ea8ea66bc3873e.jpg",
+    "description": "Early spring shrub with bright yellow flowers. Perfect for hedges and adding early-season color."
+  },
+  {
+    "id": 8,
+    "title": "Plant of the Week: BLUE MIST® Caryopteris",
+    "date": "September 5, 2025",
+    "image": "https://i.ibb.co.com/p6M1Gx3Q/caryopteris-bluebeard-1024x679.jpg",
+    "description": "A compact shrub with blue flowers that attract pollinators. Low maintenance and drought-tolerant."
+  },
+  {
+    "id": 9,
+    "title": "Plant of the Week: FIRE CHARM® Nandina",
+    "date": "August 29, 2025",
+    "image": "https://i.ibb.co.com/wZ3HwzwQ/Nandina-Firepower-5.jpg",
+    "description": "Colorful foliage shrub with red berries in fall. Perfect for adding vibrant seasonal color."
+  },
+  {
+    "id": 10,
+    "title": "Plant of the Week: SILVER LINING® Artemisia",
+    "date": "August 22, 2025",
+    "image": "https://i.ibb.co.com/DgVc5QGW/images-1.jpg",
+    "description": "Silver-leaved perennial that adds texture and contrast. Thrives in full sun and well-drained soil."
+  }
+]
