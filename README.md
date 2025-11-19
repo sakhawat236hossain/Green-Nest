@@ -38,7 +38,12 @@ src/
 - Create protected routes for service details and profile management.
 - Maintain SPA functionality with a minimalist and calming design.
 
-## 🧩 Core Features & Functional Requirements
+
+## 🌿 About GreenNest – Indoor Plant Care & Store (Detailed)
+
+GreenNest – Indoor Plant Care & Store is a complete indoor plant management platform designed to make plant care easier, smarter, and more enjoyable for users. It allows users to browse and purchase a wide variety of indoor plants, view detailed care guides for each plant, and set reminders for watering, sunlight exposure, and fertilizing.
+
+With features like Firebase Authentication, private route protection, dynamic JSON-based data handling, and a modern responsive UI, GreenNest delivers a smooth, nature-inspired user experience. The platform focuses on eco-friendly design and simplicity, making it ideal for both beginners and experienced plant lovers.
 
 ### 1. Layout Structure
 
