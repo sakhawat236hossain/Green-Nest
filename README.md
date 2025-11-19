@@ -59,7 +59,7 @@ With features like Firebase Authentication, private route protection, dynamic JS
   - `© 2025 GreenNest. All rights reserved.`
 - Navbar and Footer remain visible on all routes.
 - No crash or reload errors on route navigation.
-# project dependencies
+-## ** project dependencies **
 
 - ### dependencies List
 -   "dependencies": {
