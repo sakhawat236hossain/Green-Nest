@@ -1,4 +1,5 @@
-<img width="1439" height="767" alt="image" src="https://github.com/user-attachments/assets/ab7b6acb-19f9-4ce5-8bab-596c6b41c16d" />
+<img width="1438" height="742" alt="image" src="https://github.com/user-attachments/assets/c6adb38c-5398-43a5-b287-b68481cf80ee" />
+
 
 
 # 🍃 GreenNest – Indoor Plant Care & Store 
