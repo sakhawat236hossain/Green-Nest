@@ -27,8 +27,7 @@ src/
 ├── main.jsx
 └── index.css
 
-# 🍃 GreenNest – Indoor Plant Care & Store (Assignment-09)
-
+# 🍃 GreenNest – Indoor Plant Care & Store 
 
 
 ## 🎯 Project Goals
