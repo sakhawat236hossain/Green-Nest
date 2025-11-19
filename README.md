@@ -1,31 +1,5 @@
-# Basic Folder Structure
+<img width="1439" height="767" alt="image" src="https://github.com/user-attachments/assets/ab7b6acb-19f9-4ce5-8bab-596c6b41c16d" />
 
-src/
-├── assets/
-├── components/
-│ ├── Navbar.jsx
-│ ├── Footer.jsx
-│ ├── PrivateRoute.jsx
-│ └── PlantCard.jsx
-├── pages/
-│ ├── Home.jsx
-│ ├── Login.jsx
-│ ├── Register.jsx
-│ ├── PlantDetails.jsx
-│ ├── MyProfile.jsx
-├── layout/
-│ └── Root.jsx
-├── data/
-│ └── plants.json
-├── provider/
-│ └── AuthProvider.jsx
-├── router/
-│ └── router.jsx
-├── firebase/
-│ └── firebase.config.js
-├── App.jsx
-├── main.jsx
-└── index.css
 
 # 🍃 GreenNest – Indoor Plant Care & Store 
 
