@@ -71,7 +71,7 @@ With features like Firebase Authentication, private route protection, dynamic JS
   - `plantId, plantName, category, price, rating, description, image, availableStock, careLevel, providerName`
 - **Example:**
 
-```json
+
 [
   {
     "plantId": 1,
@@ -94,4 +94,10 @@ React.js
 Tailwind CSS
 Firebase Authentication
 Swiper.js / Framer Motion
-```
+
+
+## 📫 Contact
+
+**Md Sakhawat Hossin**  
+GitHub:(https://github.com/sakhawat236hossain) 
+Email:hmdsakhawat236@gmail.com
