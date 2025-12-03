@@ -12,7 +12,7 @@ const EcoDecorIdeas = () => {
   }, []);
 
   return (
-    <section className="py-14 bg-gradient-to-b from-green-50 to-green-100">
+    <section className="py-14 bg-gradient-to-b from-green-50 to-green-100 rounded-[20px]">
       <h2 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-10">
         🌿 Eco Decor Ideas
       </h2>

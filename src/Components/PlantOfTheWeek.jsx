@@ -19,7 +19,7 @@ const PlantOfTheWeek = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
+    <div className="max-w-6xl mx-auto px-4 py-10 rounded-[50px]">
       {/* Header */}
       <div className="text-center mb-10">
         <h1 className="text-4xl font-extrabold text-green-700">

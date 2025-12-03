@@ -7,15 +7,15 @@ import ExpertPlant from "../Components/ExpertPlant";
 import EcoDecorIdeas from "../Components/EcoDecorIdeas";
 import PlantOfTheWeek from "../Components/PlantOfTheWeek";
 import { motion } from "framer-motion";
-import PlantMarquee from "../Components/PlantMarquee";
+
 
 const Home = () => {
   const plantsData = useLoaderData();
 
   return (
-    <div className="bg-gradient-to-b from-green-50 via-white to-green-50">
+    <div className="mt-5">
       <title>Home</title>
-<PlantMarquee></PlantMarquee>
+
       {/* Slider Section */}
       <section className="mb-16">
         <Slider />

@@ -7,13 +7,14 @@ import Register from "../pages/Register";
 import PlantDetails from "../pages/PlantDetails";
 import MyProfile from "../pages/MyProfile";
 import Plants from "../pages/Plants";
+import AboutUs from "../pages/AboutUs";
 import NotFound from "../pages/NotFound";
 import AuthLayout from "../layout/AuthLayout";
 import PrivateRoute from "../provider/PrivateRoute";
 import EcoDecorIdeas from "../Components/EcoDecorIdeas";
 import PlantOfTheWeek from "../Components/PlantOfTheWeek";
 import ErrorPage from "../Components/ErrorPage";
-
+import ContactUs from "../pages/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
         path: "/myProfile",
         element: (
           <PrivateRoute>
-            <MyProfile></MyProfile>
+            <MyProfile />
           </PrivateRoute>
         ),
       },
@@ -54,24 +55,29 @@ const router = createBrowserRouter([
         loader: () => fetch("/plants.json").then(res => res.json()),
       },
       {
-       path:"/PlantOfTheWeek",
-       element:<PlantOfTheWeek></PlantOfTheWeek>,
-       loader: () => fetch("/plantOfTheWeek.json").then(res => res.json()),
+        path:"/PlantOfTheWeek",
+        element:<PlantOfTheWeek />,
+        loader: () => fetch("/plantOfTheWeek.json").then(res => res.json()),
       },
-    
+      {
+        path:"/AboutUs",
+        element: <AboutUs />
+      },
+        { path: "/contact", element: <ContactUs /> }, 
+
+
       {
         path: "/plants",
-        element: <Plants></Plants>,
+        element: <Plants />,
         loader: () => fetch("/plants.json").then(res => res.json()),
       },
       {
         path:"*",
-        element:<ErrorPage></ErrorPage>
+        element:<ErrorPage />
       }
     ],
   },
- 
-
 ]);
+
 
 export default router;

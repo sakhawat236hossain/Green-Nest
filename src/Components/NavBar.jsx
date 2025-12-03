@@ -2,13 +2,7 @@ import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import Logo from "../assets/Logo.png";
-
-//  React Icons Import
-import {
-  FaHome,
-  FaLeaf,
-  FaUserCircle,
-} from "react-icons/fa";
+import { FaHome, FaLeaf, FaUserCircle } from "react-icons/fa";
 import { FiMenu, FiX, FiLogIn, FiUserPlus, FiLogOut } from "react-icons/fi";
 
 const NavBar = () => {
@@ -17,173 +11,142 @@ const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLogout = () => {
-    logOutUser().catch((err) => console.error(err));
+    logOutUser().catch(console.error);
     setMenuOpen(false);
     setMobileMenuOpen(false);
   };
 
-  const Links = (
-    <>
-      <li>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-600 font-semibold border-b-2 border-green-600 transition flex items-center gap-1"
-              : "hover:text-green-500 transition flex items-center gap-1"
-          }
-        >
-          <FaHome /> Home
-        </NavLink>
-      </li>
+  const active = "text-green-600 border-b-2 border-green-600 flex items-center gap-1 font-semibold";
+  const normal = "flex items-center gap-1 hover:text-green-500 transition";
 
-      <li>
-        <NavLink
-          to="/plants"
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-600 font-semibold border-b-2 border-green-600 transition flex items-center gap-1"
-              : "hover:text-green-500 transition flex items-center gap-1"
-          }
-        >
-          <FaLeaf /> Plants
-        </NavLink>
-      </li>
+  const linkClass = ({ isActive }) => (isActive ? active : normal);
 
-      <li>
-        <NavLink
-          to="/myProfile"
-          className={({ isActive }) =>
-            isActive
-              ? "text-green-600 font-semibold border-b-2 border-green-600 transition flex items-center gap-1"
-              : "hover:text-green-500 transition flex items-center gap-1"
-          }
-        >
-          <FaUserCircle /> My Profile
-        </NavLink>
-      </li>
-    </>
-  );
+const Links = (
+  <>
+    <li><NavLink to="/" className={linkClass}><FaHome /> Home</NavLink></li>
+    <li><NavLink to="/plants" className={linkClass}><FaLeaf /> Plants</NavLink></li>
+    <li><NavLink to="/AboutUs" className={linkClass}><FaUserCircle /> AboutUs</NavLink></li>
+    <li><NavLink to="/contact" className={linkClass}><FaLeaf /> Contact</NavLink></li>
+
+
+    {user && (
+      <li><NavLink to="/myProfile" className={linkClass}><FaUserCircle /> Profile</NavLink></li>
+    )}
+  </>
+);
+
 
   return (
-    <div className="w-full bg-green-50 shadow-md sticky top-0 z-50">
-      <div className="max-w-[1240px] mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/*  Logo */}
-          <NavLink to="/" className="flex items-center gap-2">
-            <img
-              src={Logo}
-              alt="Logo"
-              className="w-10 h-10 object-contain rounded-full border border-green-200 p-1"
-            />
-            <span className="font-bold text-green-700 text-xl">GreenNest</span>
-          </NavLink>
+    <>
+      {/* Fixed Navbar */}
+      <div className="fixed top-0 left-0 w-full z-[9999] bg-transparent">
 
-          {/*  Desktop Links */}
-          <ul className="hidden lg:flex gap-6 text-green-700 font-medium">
-            {Links}
-          </ul>
+        {/* Centered container */}
+        <div className="max-w-[1340px] mx-auto px-4">
 
-          {/*  Desktop Right Buttons */}
-          <div className="hidden lg:flex items-center gap-4">
-            {user ? (
-              <div className="relative">
-                <img
-                  src={user.photoURL || "/default-avatar.png"}
-                  alt="Profile"
-                  className="w-9 h-9 rounded-full border cursor-pointer transition-transform hover:scale-105"
-                  onClick={() => setMenuOpen(!menuOpen)}
-                />
-                {menuOpen && (
-                  <div className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md border animate-fadeIn z-50">
-                    <p className="text-center text-sm text-gray-700 py-2 border-b">
-                      {user.displayName || "User"}
-                    </p>
-                    <button
-                      onClick={handleLogout}
-                      className="w-full py-2 text-sm bg-red-400 hover:bg-red-500 text-white font-medium rounded-b-md transition flex items-center justify-center gap-1"
-                    >
-                      <FiLogOut /> Logout
-                    </button>
-                  </div>
-                )}
-              </div>
-            ) : (
-              <>
-                <NavLink
-                  to="/auth/login"
-                  className="btn btn-sm bg-green-200 hover:bg-green-300 border-none text-green-800 font-semibold transition-all transform hover:scale-105 flex items-center gap-1"
-                >
-                  <FiLogIn /> Login
-                </NavLink>
-                <NavLink
-                  to="/auth/register"
-                  className="btn btn-sm bg-green-500 hover:bg-green-600 text-white font-semibold border-none transition-all transform hover:scale-105 flex items-center gap-1"
-                >
-                  <FiUserPlus /> Register
-                </NavLink>
-              </>
-            )}
-          </div>
+          {/* Rounded Nav */}
+          <div className="bg-gradient-to-b from-green-100 via-green-50 to-white
+                          border border-green-300 rounded-lg shadow-md">
 
-          {/*  Mobile View */}
-          <div className="lg:hidden flex items-center gap-3">
-            {/* Hamburger / Close Button */}
-            <div className="relative">
-              <button
-                className="btn btn-ghost p-2 text-2xl hover:text-green-600 transition-transform hover:scale-110"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                {mobileMenuOpen ? <FiX /> : <FiMenu />}
-              </button>
+            {/* Navbar content */}
+            <div className="h-16 flex justify-between items-center px-6">
 
-              {mobileMenuOpen && (
-                <div className="fixed top-20 left-1/2 -translate-x-1/2 w-64 bg-white shadow-lg rounded-md border animate-fadeIn z-50">
-                  <ul className="flex flex-col gap-2 p-4">
-                    {Links}
-                    {user && (
-                      <li className="mt-2">
+              {/* Logo */}
+              <NavLink to="/" className="flex items-center gap-2">
+                <img src={Logo} className="w-9 h-9 rounded-full border p-1" alt="logo"/>
+                <span className="text-green-700 font-bold text-base">GreenNest</span>
+              </NavLink>
+
+              {/* Desktop Links */}
+              <ul className="hidden lg:flex gap-8 text-green-700 font-medium">
+                {Links}
+              </ul>
+
+              {/* Desktop Right */}
+              <div className="hidden lg:flex items-center gap-4">
+                {!user ? (
+                  <>
+                    <NavLink to="/auth/login" className="flex items-center gap-1 text-green-800 hover:text-green-600 bg-green-500">
+                      <FiLogIn /> Login
+                    </NavLink>
+                    <NavLink to="/auth/register" className="bg-green-500 text-white px-4 py-1 rounded-full hover:bg-green-600 flex justify-center">
+                      <FiUserPlus /> Register
+                    </NavLink>
+                  </>
+                ) : (
+                  <div className="relative">
+                    <img
+                      src={user.photoURL || "/default-avatar.png"}
+                      onClick={() => setMenuOpen(!menuOpen)}
+                      className="w-9 h-9 rounded-full cursor-pointer ring-2 ring-green-400 hover:scale-105 transition"
+                      alt="profile"
+                    />
+                    {menuOpen && (
+                      <div className="absolute right-0 mt-2 bg-white w-44 shadow-md border rounded">
+                        <p className="text-center text-sm border-b py-2">{user.displayName || "User"}</p>
                         <button
                           onClick={handleLogout}
-                          className="w-full btn btn-sm bg-red-400 hover:bg-red-500 text-white border-none font-medium transition-all transform hover:scale-105 flex items-center justify-center gap-1"
+                          className="w-full text-red-500 py-2 hover:bg-red-50 flex justify-center gap-1"
                         >
                           <FiLogOut /> Logout
                         </button>
-                      </li>
+                      </div>
                     )}
-                  </ul>
-                </div>
-              )}
-            </div>
-
-            {/* Mobile Avatar */}
-            {user && (
-              <div className="relative">
-                <img
-                  src={user.photoURL || "/default-avatar.png"}
-                  alt="Profile"
-                  className="w-9 h-9 rounded-full border cursor-pointer transition-transform hover:scale-105"
-                  onClick={() => setMenuOpen(!menuOpen)}
-                />
-                {menuOpen && (
-                  <div className="fixed top-20 left-1/2 -translate-x-1/2 w-64 bg-white shadow-lg rounded-md border animate-fadeIn z-50">
-                    <p className="text-center text-sm text-gray-700 py-2 border-b">
-                      {user.displayName || "User"}
-                    </p>
-                    <button
-                      onClick={handleLogout}
-                      className="w-full py-2 text-sm bg-red-400 hover:bg-red-500 text-white font-medium transition-all transform hover:scale-105 flex items-center justify-center gap-1"
-                    >
-                      <FiLogOut /> Logout
-                    </button>
                   </div>
                 )}
               </div>
+
+              {/* Mobile */}
+              <div className="lg:hidden flex items-center gap-2">
+                <button className="text-2xl" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                  {mobileMenuOpen ? <FiX /> : <FiMenu />}
+                </button>
+                {user && (
+                  <img
+                    src={user.photoURL || "/default-avatar.png"}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    className="w-8 h-8 rounded-full ring-2 ring-green-400"
+                    alt="profile"
+                  />
+                )}
+              </div>
+
+            </div>
+
+            {/* Mobile Menu */}
+            {mobileMenuOpen && (
+              <div className="lg:hidden bg-white border-t">
+                <ul className="flex flex-col gap-3 p-4 text-green-700 font-medium">
+                  {Links}
+                  {!user ? (
+                    <>
+                      <NavLink to="/auth/login" onClick={() => setMobileMenuOpen(false)}>Login</NavLink>
+                      <NavLink to="/auth/register" onClick={() => setMobileMenuOpen(false)}>Register</NavLink>
+                    </>
+                  ) : (
+                    <button onClick={handleLogout} className="flex items-center gap-1 text-red-500">
+                      <FiLogOut /> Logout
+                    </button>
+                  )}
+                </ul>
+              </div>
             )}
+
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Space after fixed navbar */}
+      <div className="h-16" />
+
+      {/* Mobile Profile Popup */}
+      {menuOpen && user && (
+        <div className="lg:hidden fixed top-20 left-1/2 -translate-x-1/2 bg-white w-60 rounded shadow border z-[9999]">
+          <p className="text-center border-b py-2">{user.displayName || "User"}</p>
+          <button onClick={handleLogout} className="w-full text-red-500 py-2">Logout</button>
+        </div>
+      )}
+    </>
   );
 };
 
