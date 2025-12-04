@@ -1,34 +1,8 @@
-# Basic Folder Structure
+<img width="1438" height="742" alt="image" src="https://github.com/user-attachments/assets/c6adb38c-5398-43a5-b287-b68481cf80ee" />
 
-src/
-├── assets/
-├── components/
-│ ├── Navbar.jsx
-│ ├── Footer.jsx
-│ ├── PrivateRoute.jsx
-│ └── PlantCard.jsx
-├── pages/
-│ ├── Home.jsx
-│ ├── Login.jsx
-│ ├── Register.jsx
-│ ├── PlantDetails.jsx
-│ ├── MyProfile.jsx
-├── layout/
-│ └── Root.jsx
-├── data/
-│ └── plants.json
-├── provider/
-│ └── AuthProvider.jsx
-├── router/
-│ └── router.jsx
-├── firebase/
-│ └── firebase.config.js
-├── App.jsx
-├── main.jsx
-└── index.css
 
-# 🍃 GreenNest – Indoor Plant Care & Store (Assignment-09)
 
+# 🍃 GreenNest – Indoor Plant Care & Store 
 
 
 ## 🎯 Project Goals
@@ -39,7 +13,12 @@ src/
 - Create protected routes for service details and profile management.
 - Maintain SPA functionality with a minimalist and calming design.
 
-## 🧩 Core Features & Functional Requirements
+
+## 🌿 About GreenNest – Indoor Plant Care & Store (Detailed)
+
+GreenNest – Indoor Plant Care & Store is a complete indoor plant management platform designed to make plant care easier, smarter, and more enjoyable for users. It allows users to browse and purchase a wide variety of indoor plants, view detailed care guides for each plant, and set reminders for watering, sunlight exposure, and fertilizing.
+
+With features like Firebase Authentication, private route protection, dynamic JSON-based data handling, and a modern responsive UI, GreenNest delivers a smooth, nature-inspired user experience. The platform focuses on eco-friendly design and simplicity, making it ideal for both beginners and experienced plant lovers.
 
 ### 1. Layout Structure
 
@@ -55,6 +34,36 @@ src/
   - `© 2025 GreenNest. All rights reserved.`
 - Navbar and Footer remain visible on all routes.
 - No crash or reload errors on route navigation.
+-## ** project dependencies **
+
+- ### dependencies List
+-   "dependencies": {
+    "@tailwindcss/vite": "^4.1.15",
+    "firebase": "^12.4.0",
+    "framer-motion": "^12.23.24",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.4",
+    "react-toastify": "^11.0.5",
+    "swiper": "^12.0.3",
+    "tailwindcss": "^4.1.15"
+
+  },
+  ### devDependencies
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "daisyui": "^5.3.7",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "vite": "^7.1.7"
+  }
 
 ### 2. JSON Data Setup
 
@@ -62,7 +71,7 @@ src/
   - `plantId, plantName, category, price, rating, description, image, availableStock, careLevel, providerName`
 - **Example:**
 
-```json
+
 [
   {
     "plantId": 1,
@@ -77,10 +86,18 @@ src/
     "providerName": "UrbanGreen Studio"
   }
 ]
+## Live link
+::https://greenmin.netlify.app/
 
 ***💻Technologies Used***
 React.js
 Tailwind CSS
 Firebase Authentication
 Swiper.js / Framer Motion
-```
+
+
+## 📫 Contact
+
+**Md Sakhawat Hossin**  
+GitHub:(https://github.com/sakhawat236hossain) 
+Email:hmdsakhawat236@gmail.com
