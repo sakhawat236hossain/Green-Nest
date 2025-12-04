@@ -1,243 +1,403 @@
 [
+{
+  "plantId": 1,
+  "plantName": "Snake Plant",
+  "category": "Air Purifier",
+  "price": 18,
+  "rating": 4.8,
+  "availableStock": 10,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/bRXSgvwV/parker-sturdivant-Lh6t-Vz-Dd-Mg-unsplash.jpg",
+  "providerName": "UrbanGreen Studio",
+
+  "originCountry": "Tropical West Africa",
+  "sunlightRequirement": "Low to Bright Indirect Light",
+  "wateringFrequency": "Once every 10–14 days",
+  "potSize": "Medium Pot (8–10 inch)",
+  "petSafety": "Mildly toxic to pets if ingested",
+
+  "description": "The Snake Plant is one of the toughest and most reliable indoor plants available today.\nIt improves air quality by absorbing toxins and releasing fresh oxygen.\nThis plant can survive in low light and requires minimal watering.\nIt is an excellent choice for bedrooms and office spaces.\nThe tall, upright leaves add a modern look to any room.\nEven beginners can grow this plant easily without stress.\nIt can tolerate dry air and inconsistent maintenance.\nA perfect indoor companion for busy lifestyles.\nIt grows slowly but lives long with proper care.\nA stylish green solution for healthy indoor living."
+},
+
   {
-    "plantId": 1,
-    "plantName": "Snake Plant",
-    "category": "Air Purifier",
-    "price": 18,
-    "rating": 4.8,
-    "availableStock": 10,
-    "careLevel": "Easy",
-    "description": "A hardy plant that purifies indoor air and thrives in low light. Ideal for bedrooms and offices.",
-    "image": "https://i.ibb.co.com/bRXSgvwV/parker-sturdivant-Lh6t-Vz-Dd-Mg-unsplash.jpg",
-    "providerName": "UrbanGreen Studio"
-  },
+  "plantId": 2,
+  "plantName": "Peace Lily",
+  "category": "Flowering Plant",
+  "price": 25,
+  "rating": 4.9,
+  "availableStock": 8,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/tPT1V9YD/natalie-kinnear-nt3e-W1-VW0a-Q-unsplash.jpg",
+  "providerName": "BloomHouse",
+
+  "originCountry": "Tropical Americas",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "2 times per week",
+  "potSize": "Medium to Large Pot (10–12 inch)",
+  "petSafety": "Toxic to cats and dogs if ingested",
+
+  "description": "The Peace Lily is one of the most elegant and graceful indoor flowering plants.\nIts pure white blooms bring calmness and beauty to any room.\nThis plant helps remove toxins from indoor air naturally.\nIt thrives in bright, indirect light and moderate watering.\nPeace Lily leaves will droop when thirsty, making care easier.\nIt is perfect for living rooms and office desks.\nThe dark green leaves contrast beautifully with its flowers.\nIt prefers humid environments for lush growth.\nWith proper care, it blooms several times a year.\nA perfect blend of beauty and air-purifying power."
+},
+
+{
+  "plantId": 3,
+  "plantName": "Aloe Vera",
+  "category": "Medicinal",
+  "price": 15,
+  "rating": 4.7,
+  "availableStock": 12,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/kgm4CLwf/jude-smart-l-E6z79gu-KI0-unsplash.jpg",
+  "providerName": "NatureCare",
+
+  "originCountry": "Arabian Peninsula",
+  "sunlightRequirement": "Bright Direct Sunlight",
+  "wateringFrequency": "Once every 7–10 days",
+  "potSize": "Small to Medium Pot",
+  "petSafety": "Toxic to cats and dogs if ingested",
+
+  "description": "Aloe Vera is a powerful medicinal plant known for its healing properties.\nIts gel is commonly used for skin care and hair treatment.\nThis plant stores water in its thick leaves.\nIt requires very little watering and care.\nAloe Vera loves bright sunlight for healthy growth.\nIt is perfect for balconies, windows, and sunny rooms.\nThe gel also helps soothe burns and skin irritation.\nIt improves indoor air quality naturally.\nAloe Vera is long-lasting and grows well indoors.\nAn excellent plant for beginners and nature lovers."
+},
+
+ {
+  "plantId": 4,
+  "plantName": "Monstera Deliciosa",
+  "category": "Decorative",
+  "price": 40,
+  "rating": 4.9,
+  "availableStock": 6,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/5gpb6S9d/feey-bws-TJMnhcw-E-unsplash.jpg",
+  "providerName": "LeafyHomes",
+
+  "originCountry": "Southern Mexico",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "Once every 5–7 days",
+  "potSize": "Large Pot",
+  "petSafety": "Toxic to pets if eaten",
+
+  "description": "Monstera Deliciosa is loved for its large decorative leaves.\nThe natural leaf holes give it a tropical look.\nIt fits perfectly in modern homes and offices.\nThis plant prefers indirect sunlight for best growth.\nWatering once a week keeps it healthy.\nIt grows fast with proper light and care.\nThe glossy leaves add a luxury feel to interiors.\nIt helps improve indoor air freshness.\nMonstera becomes more beautiful as it matures.\nA bold statement plant for any space."
+},
+
   {
-    "plantId": 2,
-    "plantName": "Peace Lily",
-    "category": "Flowering Plant",
-    "price": 25,
-    "rating": 4.9,
-    "availableStock": 8,
-    "careLevel": "Medium",
-    "description": "A beautiful flowering plant that removes toxins and adds elegance to any space.",
-    "image": "https://i.ibb.co.com/tPT1V9YD/natalie-kinnear-nt3e-W1-VW0a-Q-unsplash.jpg",
-    "providerName": "BloomHouse"
-  },
+  "plantId": 5,
+  "plantName": "ZZ Plant",
+  "category": "Low Light",
+  "price": 22,
+  "rating": 4.6,
+  "availableStock": 15,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/ZpcSPgjG/naoki-suzuki-tr-Ec-HBlsa-ZM-unsplash.jpg",
+  "providerName": "UrbanNest",
+
+  "originCountry": "Eastern Africa",
+  "sunlightRequirement": "Low to Indirect Light",
+  "wateringFrequency": "Once every 10–14 days",
+  "potSize": "Medium Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "The ZZ Plant is one of the easiest indoor plants.\nIt survives even in poor lighting conditions.\nThis plant stores water inside its thick stems.\nPerfect for busy people and beginners.\nWatering is needed only once in two weeks.\nLeaves remain green and shiny always.\nIt looks stylish in rooms and offices.\nThe ZZ Plant improves air quality.\nIt is very resistant to plant diseases.\nA true low-maintenance beauty plant."
+},
+
+{
+  "plantId": 6,
+  "plantName": "Spider Plant",
+  "category": "Air Purifier",
+  "price": 16,
+  "rating": 4.7,
+  "availableStock": 20,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/XZsCdrtz/sarah-sheedy-t3s-BT7-DS85-U-unsplash.jpg",
+  "providerName": "EcoLife Garden",
+
+  "originCountry": "South Africa",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "Once every 5–7 days",
+  "potSize": "Medium Pot",
+  "petSafety": "Safe for pets",
+
+  "description": "Spider Plant is a fast-growing indoor plant.\nIt is excellent for purifying indoor air.\nThe long striped leaves look beautiful in hanging baskets.\nIt adapts easily to different environments.\nRequires watering once a week.\nPrefers bright but indirect sunlight.\nProduces baby plants naturally.\nGreat choice for living rooms and balconies.\nSafe for households with pets.\nA perfect beginner-friendly plant."
+},
+
+ {
+  "plantId": 7,
+  "plantName": "Pothos Money ",
+  "category": "Climbing Plant",
+  "price": 14,
+  "rating": 4.8,
+  "availableStock": 18,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/cXZvFGh3/arundhati-pathak-7h-Rp7r-Oof4g-unsplash.jpg",
+  "providerName": "GreenAura",
+
+  "originCountry": "Southeast Asia",
+  "sunlightRequirement": "Low to Moderate Light",
+  "wateringFrequency": "Once every 7–10 days",
+  "potSize": "Small or Hanging Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "Pothos is a popular indoor climbing plant.\nIts heart-shaped leaves stay green always.\nVery easy to grow and maintain.\nGrows well in low light conditions.\nPerfect for hanging baskets and walls.\nNeeds watering once a week.\nFilters toxins from indoor air.\nBrings positive energy according to belief.\nIdeal for bedrooms and workspaces.\nA must-have decorative plant."
+},
+
+ {
+  "plantId": 8,
+  "plantName": "Rubber Plant",
+  "category": "Decorative",
+  "price": 28,
+  "rating": 4.5,
+  "availableStock": 7,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/YTR24gQc/rubbertree-10.jpg",
+  "providerName": "UrbanLeaf",
+
+  "originCountry": "India",
+  "sunlightRequirement": "Bright Indirect Sunlight",
+  "wateringFrequency": "Once every 6–8 days",
+  "potSize": "Medium to Large Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "Rubber Plant adds elegance to indoor spaces.\nIts thick glossy leaves make rooms stylish.\nIt grows well in bright indirect light.\nHelps purify indoor air naturally.\nNeeds moderate watering.\nOverwatering should be avoided.\nPrefers warm temperatures.\nPerfect for living rooms and offices.\nEasy to shape as it grows tall.\nRequires simple regular care."
+},
+
   {
-    "plantId": 3,
-    "plantName": "Aloe Vera",
-    "category": "Medicinal",
-    "price": 15,
-    "rating": 4.7,
-    "availableStock": 12,
-    "careLevel": "Easy",
-    "description": "A low-maintenance plant with healing properties for skin and hair. Needs bright sunlight.",
-    "image": "https://i.ibb.co.com/kgm4CLwf/jude-smart-l-E6z79gu-KI0-unsplash.jpg",
-    "providerName": "NatureCare"
-  },
+  "plantId": 9,
+  "plantName": "Boston Fern",
+  "category": "Hanging Plant",
+  "price": 20,
+  "rating": 4.6,
+  "availableStock": 11,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/0jN6JhdS/images.jpg",
+  "providerName": "EcoGarden",
+
+  "originCountry": "Tropical America",
+  "sunlightRequirement": "Indirect Light or Shade",
+  "wateringFrequency": "Every 3–5 days",
+  "potSize": "Hanging Pot or Medium Pot",
+  "petSafety": "Safe for pets",
+
+  "description": "Boston Fern is a humidity-loving plant.\nIts soft feathery leaves look beautiful.\nPerfect for hanging baskets.\nThrive in shaded areas.\nNeeds regular watering.\nLoves moisture in the air.\nGreat for bathrooms and kitchens.\nImproves air quality.\nAdds natural freshness.\nA delicate yet rewarding plant."
+},
+
+{
+  "plantId": 10,
+  "plantName": "Areca Palm",
+  "category": "Air Purifier",
+  "price": 35,
+  "rating": 4.9,
+  "availableStock": 5,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/XvB0bh6/images-1.jpg",
+  "providerName": "GreenNest Hub",
+
+  "originCountry": "Madagascar",
+  "sunlightRequirement": "Bright Indirect Sunlight",
+  "wateringFrequency": "Every 5–6 days",
+  "potSize": "Large Pot",
+  "petSafety": "Safe for pets",
+
+  "description": "Areca Palm is a beautiful indoor tropical plant.\nIt gives rooms a fresh and natural look.\nHighly effective air purifier.\nRemoves harmful toxins from the air.\nThrives in bright light.\nNeeds well-drained soil.\nOverwatering should be avoided.\nGrows best in warm temperatures.\nGreat for living rooms.\nAdds elegance and comfort."
+},
+
+ {
+  "plantId": 11,
+  "plantName": "Chinese Evergreen",
+  "category": "Low Light",
+  "price": 19,
+  "rating": 4.7,
+  "availableStock": 9,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/xKMjmGqD/png-clipart-chinese-evergreens-ornamental-plant-philippine-evergreen-houseplant-flowerpot-plants-thu.png",
+  "providerName": "LeafStudio",
+
+  "originCountry": "Southeast Asia",
+  "sunlightRequirement": "Low to Medium Light",
+  "wateringFrequency": "Once a week",
+  "potSize": "Small to Medium Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "Chinese Evergreen is perfect for beginners.\nIt survives in low light.\nEasy to maintain.\nRequires less watering.\nDecorative indoor plant.\nImproves indoor atmosphere.\nStrong and durable leaves.\nResistant to most diseases.\nIdeal for offices.\nAdds a calming green touch."
+},
+
+{
+  "plantId": 12,
+  "plantName": "Jade Plant",
+  "category": "Succulent",
+  "price": 24,
+  "rating": 4.8,
+  "availableStock": 13,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/qLdLPY3S/images-2.jpg",
+  "providerName": "BloomWorks",
+
+  "originCountry": "South Africa",
+  "sunlightRequirement": "Bright Direct Sunlight",
+  "wateringFrequency": "Once every 10 days",
+  "potSize": "Small Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "Jade Plant symbolizes growth and prosperity.\nA perfect choice for homes and offices.\nThrives in bright sunlight.\nNeeds very little water.\nOverwatering may damage roots.\nStores water in its leaves.\nCan live for many years.\nGrows slowly but steadily.\nImproves room aesthetics.\nLow maintenance plant."
+},
+
+ {
+  "plantId": 13,
+  "plantName": "Calathea Orbifolia",
+  "category": "Decorative",
+  "price": 27,
+  "rating": 4.5,
+  "availableStock": 6,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/HDVHkDjs/images-3.jpg",
+  "providerName": "GreenAura",
+
+  "originCountry": "Bolivia",
+  "sunlightRequirement": "Indirect Light",
+  "wateringFrequency": "Twice a week",
+  "potSize": "Medium Pot",
+  "petSafety": "Safe for pets",
+
+  "description": "Calathea Orbifolia is known for unique leaf patterns.\nLeaves move with light changes.\nPrefers high humidity.\nNeeds indirect sunlight.\nSensitive to hard water.\nUse filtered water if possible.\nEnhances room beauty.\nWorks well in bedrooms.\nRequires careful watering.\nPremium decorative plant."
+},
+
+ {
+  "plantId": 14,
+  "plantName": "Lucky Bamboo",
+  "category": "Water Plant",
+  "price": 17,
+  "rating": 4.6,
+  "availableStock": 14,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/gZdYsWkk/png-transparent-tropical-woody-bamboos-lucky-bamboo-houseplant-flowerpot-lucky-bamboo-glass-plant-st.png",
+  "providerName": "ZenPlants",
+
+  "originCountry": "China",
+  "sunlightRequirement": "Indirect Light",
+  "wateringFrequency": "Change water weekly",
+  "potSize": "Glass Bowl / Small Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "Lucky Bamboo represents luck and positivity.\nCommonly used in home decor.\nGrows well in water.\nAlso can grow in soil.\nNeeds indirect sunlight.\nAvoid direct harsh light.\nWater must be clean.\nPopular in gift items.\nImproves visual aesthetics.\nLow maintenance plant."
+},
+
   {
-    "plantId": 4,
-    "plantName": "Monstera Deliciosa",
-    "category": "Decorative",
-    "price": 40,
-    "rating": 4.9,
-    "availableStock": 6,
-    "careLevel": "Medium",
-    "description": "Known as the Swiss cheese plant, perfect for modern interiors with its large split leaves.",
-    "image": "https://i.ibb.co.com/5gpb6S9d/feey-bws-TJMnhcw-E-unsplash.jpg",
-    "providerName": "LeafyHomes"
-  },
+  "plantId": 15,
+  "plantName": "Fiddle Leaf Fig",
+  "category": "Decorative",
+  "price": 45,
+  "rating": 4.9,
+  "availableStock": 4,
+  "careLevel": "Hard",
+  "image": "https://i.ibb.co.com/DHsQVP16/images-5.jpg",
+  "providerName": "LeafyHomes",
+
+  "originCountry": "West Africa",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "Once a week",
+  "potSize": "Large Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "Fiddle Leaf Fig is a statement plant.\nLarge violin-shaped leaves.\nVery decorative indoors.\nNeeds bright light.\nSensitive to overwatering.\nLikes stable environment.\nAvoid frequent moving.\nNeeds humidity.\nGrows tall indoors.\nPremium interior plant."
+},
+
+{
+  "plantId": 16,
+  "plantName": "Dracaena Marginata",
+  "category": "Air Purifier",
+  "price": 26,
+  "rating": 4.7,
+  "availableStock": 10,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/pvkMMR4s/images-6.jpg",
+  "providerName": "EcoLife Garden",
+
+  "originCountry": "Madagascar",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "Once every 7-10 days",
+  "potSize": "Medium Pot",
+  "petSafety": "Non-toxic to pets",
+
+  "description": "Dracaena Marginata is a striking indoor plant.\nTall, thin stems with spiky leaves.\nExcellent for air purification.\nThrives in bright indirect light.\nRequires moderate watering.\nAvoid overwatering.\nAdds a vertical accent indoors.\nEasy to propagate.\nIdeal for offices and living rooms.\nModerate maintenance plant."
+},
+
+ {
+  "plantId": 17,
+  "plantName": "Orchid",
+  "category": "Flowering Plant",
+  "price": 30,
+  "rating": 4.8,
+  "availableStock": 7,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/d0fvHfRm/images-7.jpg",
+  "providerName": "BloomHouse",
+
+  "originCountry": "Tropical Asia",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "Twice a week",
+  "potSize": "Small to Medium Pot",
+  "petSafety": "Toxic to pets",
+
+  "description": "Orchids are elegant flowering plants.\nLong-lasting blooms.\nAdds color and beauty indoors.\nRequires bright indirect light.\nModerate watering needed.\nAvoid direct harsh sunlight.\nPrefers humidity.\nPopular as gifts.\nCan bloom multiple times a year.\nModerate care with stunning results."
+},
+
+ {
+  "plantId": 18,
+  "plantName": "Kalanchoe",
+  "category": "Succulent",
+  "price": 20,
+  "rating": 4.6,
+  "availableStock": 10,
+  "careLevel": "Easy",
+  "image": "https://i.ibb.co.com/pvsv8KSy/images-8.jpg",
+  "providerName": "NatureCare",
+
+  "originCountry": "Madagascar",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "Once a week",
+  "potSize": "Small Pot",
+  "petSafety": "Non-toxic to pets",
+
+  "description": "Kalanchoe is a charming succulent with colorful flowers.\nEasy to maintain indoors.\nThrives in bright indirect light.\nRequires minimal watering.\nPerfect for desktops and shelves.\nAdds vibrant color to any room.\nBlooms for several weeks.\nPropagates easily from leaves.\nSuitable for beginner plant lovers.\nLow maintenance and decorative."
+},
+
   {
-    "plantId": 5,
-    "plantName": "ZZ Plant",
-    "category": "Low Light",
-    "price": 22,
-    "rating": 4.6,
-    "availableStock": 15,
-    "careLevel": "Easy",
-    "description": "An almost indestructible plant that thrives in low light and requires little water.",
-    "image": "https://i.ibb.co.com/ZpcSPgjG/naoki-suzuki-tr-Ec-HBlsa-ZM-unsplash.jpg",
-    "providerName": "UrbanNest"
-  },
-  {
-    "plantId": 6,
-    "plantName": "Spider Plant",
-    "category": "Air Purifier",
-    "price": 16,
-    "rating": 4.7,
-    "availableStock": 20,
-    "careLevel": "Easy",
-    "description": "A fast-growing plant that removes toxins and looks great in hanging pots.",
-    "image": "https://i.ibb.co.com/XZsCdrtz/sarah-sheedy-t3s-BT7-DS85-U-unsplash.jpg",
-    "providerName": "EcoLife Garden"
-  },
-  {
-    "plantId": 7,
-    "plantName": "Pothos (Money Plant)",
-    "category": "Climbing Plant",
-    "price": 14,
-    "rating": 4.8,
-    "availableStock": 18,
-    "careLevel": "Easy",
-    "description": "A vining plant known for its lush green leaves and easy propagation. Brings good luck.",
-    "image": "https://i.ibb.co.com/cXZvFGh3/arundhati-pathak-7h-Rp7r-Oof4g-unsplash.jpg",
-    "providerName": "GreenAura"
-  },
-  {
-    "plantId": 8,
-    "plantName": "Rubber Plant",
-    "category": "Decorative",
-    "price": 28,
-    "rating": 4.5,
-    "availableStock": 7,
-    "careLevel": "Medium",
-    "description": "Glossy dark-green leaves make this plant a stylish addition to any room.",
-    "image": "https://i.ibb.co.com/YTR24gQc/rubbertree-10.jpg",
-    "providerName": "UrbanLeaf"
-  },
-  {
-    "plantId": 9,
-    "plantName": "Boston Fern",
-    "category": "Hanging Plant",
-    "price": 20,
-    "rating": 4.6,
-    "availableStock": 11,
-    "careLevel": "Medium",
-    "description": "A lush fern that loves humidity and looks perfect in bathrooms or shaded corners.",
-    "image": "https://i.ibb.co.com/0jN6JhdS/images.jpg",
-    "providerName": "EcoGarden"
-  },
-  {
-    "plantId": 10,
-    "plantName": "Areca Palm",
-    "category": "Air Purifier",
-    "price": 35,
-    "rating": 4.9,
-    "availableStock": 5,
-    "careLevel": "Medium",
-    "description": "A tropical beauty that improves air quality and gives a relaxing vibe to your home.",
-    "image": "https://i.ibb.co.com/XvB0bh6/images-1.jpg",
-    "providerName": "GreenNest Hub"
-  },
-  {
-    "plantId": 11,
-    "plantName": "Chinese Evergreen",
-    "category": "Low Light",
-    "price": 19,
-    "rating": 4.7,
-    "availableStock": 9,
-    "careLevel": "Easy",
-    "description": "Perfect for beginners, this plant grows well in any light condition.",
-    "image": "https://i.ibb.co.com/xKMjmGqD/png-clipart-chinese-evergreens-ornamental-plant-philippine-evergreen-houseplant-flowerpot-plants-thu.png",
-    "providerName": "LeafStudio"
-  },
-  {
-    "plantId": 12,
-    "plantName": "Jade Plant",
-    "category": "Succulent",
-    "price": 24,
-    "rating": 4.8,
-    "availableStock": 13,
-    "careLevel": "Easy",
-    "description": "A popular succulent believed to bring prosperity. Thrives in bright light.",
-    "image": "https://i.ibb.co.com/qLdLPY3S/images-2.jpg",
-    "providerName": "BloomWorks"
-  },
-  {
-    "plantId": 13,
-    "plantName": "Calathea Orbifolia",
-    "category": "Decorative",
-    "price": 27,
-    "rating": 4.5,
-    "availableStock": 6,
-    "careLevel": "Medium",
-    "description": "Beautiful striped leaves that move with the light — perfect for indoor décor.",
-    "image": "https://i.ibb.co.com/HDVHkDjs/images-3.jpg",
-    "providerName": "GreenAura"
-  },
-  {
-    "plantId": 14,
-    "plantName": "Lucky Bamboo",
-    "category": "Water Plant",
-    "price": 17,
-    "rating": 4.6,
-    "availableStock": 14,
-    "careLevel": "Easy",
-    "description": "Symbol of good fortune and happiness, grows easily in water or soil.",
-    "image": "https://i.ibb.co.com/gZdYsWkk/png-transparent-tropical-woody-bamboos-lucky-bamboo-houseplant-flowerpot-lucky-bamboo-glass-plant-st.png",
-    "providerName": "ZenPlants"
-  },
-  {
-    "plantId": 15,
-    "plantName": "Fiddle Leaf Fig",
-    "category": "Decorative",
-    "price": 45,
-    "rating": 4.9,
-    "availableStock": 4,
-    "careLevel": "Hard",
-    "description": "Large violin-shaped leaves make this plant the centerpiece of any living room.",
-    "image": "https://i.ibb.co.com/DHsQVP16/images-5.jpg",
-    "providerName": "LeafyHomes"
-  },
-  {
-    "plantId": 16,
-    "plantName": "Dracaena Marginata",
-    "category": "Air Purifier",
-    "price": 26,
-    "rating": 4.7,
-    "availableStock": 10,
-    "careLevel": "Medium",
-    "description": "A tall, spiky-leaved plant that thrives in bright indirect light and cleans the air.",
-    "image": "https://i.ibb.co.com/pvkMMR4s/images-6.jpg",
-    "providerName": "EcoLife Garden"
-  },
-  {
-    "plantId": 17,
-    "plantName": "Orchid",
-    "category": "Flowering Plant",
-    "price": 30,
-    "rating": 4.8,
-    "availableStock": 7,
-    "careLevel": "Medium",
-    "description": "Elegant flowering plant with long-lasting blooms, perfect for bright indoor spots.",
-    "image": "https://i.ibb.co.com/d0fvHfRm/images-7.jpg",
-    "providerName": "BloomHouse"
-  },
-  {
-    "plantId": 18,
-    "plantName": "Kalanchoe",
-    "category": "Succulent",
-    "price": 20,
-    "rating": 4.6,
-    "availableStock": 10,
-    "careLevel": "Easy",
-    "description": "A colorful succulent with small flowers, easy to maintain indoors.",
-    "image": "https://i.ibb.co.com/pvsv8KSy/images-8.jpg",
-    "providerName": "NatureCare"
-  },
-  {
-    "plantId": 19,
-    "plantName": "Begonia",
-    "category": "Flowering Plant",
-    "price": 18,
-    "rating": 4.5,
-    "availableStock": 12,
-    "careLevel": "Medium",
-    "description": "Brightly colored leaves and flowers that brighten up any indoor space.",
-    "image": "https://i.ibb.co.com/9mHScJNx/images-9.jpg",
-    "providerName": "LeafStudio"
-  },
-  {
-    "plantId": 20,
-    "plantName": "Hoya Carnosa",
-    "category": "Climbing Plant",
-    "price": 22,
-    "rating": 4.7,
-    "availableStock": 9,
-    "careLevel": "Medium",
-    "description": "Vining plant with waxy leaves and clusters of fragrant flowers.",
-    "image": "https://i.ibb.co.com/1JMFZCmp/images-10.jpg",
-    "providerName": "GreenAura"
-  }
+  "plantId": 19,
+  "plantName": "Begonia",
+  "category": "Flowering Plant",
+  "price": 18,
+  "rating": 4.5,
+  "availableStock": 12,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/9mHScJNx/images-9.jpg",
+  "providerName": "LeafStudio",
+
+  "originCountry": "South America",
+  "sunlightRequirement": "Indirect Light",
+  "wateringFrequency": "Twice a week",
+  "potSize": "Medium Pot",
+  "petSafety": "Non-toxic to pets",
+
+  "description": "Begonia is a vibrant flowering plant.\nBrightly colored leaves and blooms.\nAdds cheer to any indoor space.\nThrives in indirect light.\nRequires regular watering.\nIdeal for living rooms and offices.\nEasy to propagate.\nBlooms multiple times per year.\nModerate care needed.\nEnhances indoor décor beautifully."
+},
+
+{
+  "plantId": 20,
+  "plantName": "Hoya Carnosa",
+  "category": "Climbing Plant",
+  "price": 22,
+  "rating": 4.7,
+  "availableStock": 9,
+  "careLevel": "Medium",
+  "image": "https://i.ibb.co.com/1JMFZCmp/images-10.jpg",
+  "providerName": "GreenAura",
+
+  "originCountry": "Southeast Asia",
+  "sunlightRequirement": "Bright Indirect Light",
+  "wateringFrequency": "Once a week",
+  "potSize": "Medium Pot",
+  "petSafety": "Non-toxic to pets",
+
+  "description": "Hoya Carnosa is a vining plant with waxy leaves.\nProduces clusters of fragrant flowers.\nThrives in bright indirect light.\nPrefers well-draining soil.\nWater moderately once a week.\nPerfect for hanging baskets and trellises.\nEasy to train and propagate.\nAdds elegance to indoor spaces.\nLow-maintenance and resilient.\nIdeal for plant enthusiasts and beginners alike."
+}
+
  
 ]

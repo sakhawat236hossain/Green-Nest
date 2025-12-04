@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../Components/NavBar";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../Components/Footer";
+import Loader from "../Components/Loader";
 
 const Root = () => {
+   const [loading, setLoading] = useState(true);
+     const location = useLocation();
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 1000); 
+    return () => clearTimeout(timer);
+  }, [location]); 
+
   return (
     <div>
       {/* Navbar */}
@@ -13,7 +23,7 @@ const Root = () => {
 
       {/* Main Content */}
       <main className=" max-w-7xl mx-auto px-4 py-3 md:py-5">
-        <Outlet />
+         {loading ? <Loader /> : <Outlet />}
       </main>
 
       {/* Footer */}

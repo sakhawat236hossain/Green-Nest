@@ -48,9 +48,9 @@ const router = createBrowserRouter([
       {
         path: "/plantDetails/:id",
         element: (
-          <PrivateRoute>
+          
             <PlantDetails />
-          </PrivateRoute>
+          
         ),
         loader: () => fetch("/plants.json").then(res => res.json()),
       },

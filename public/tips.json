@@ -2,55 +2,55 @@
   {
     "id": 1,
     "title": "💧 Watering Tips",
-    "short": "সঠিকভাবে গাছকে পানি দিন",
-    "description": "মাটির উপরের ১ ইঞ্চি অংশ শুকিয়ে গেলে গাছে পানি দিন। অতিরিক্ত পানি দিলে গাছের মূল পচে যেতে পারে, তাই ড্রেনেজ ভালো আছে কিনা দেখে নিন। গ্রীষ্মে সপ্তাহে ২-৩ বার এবং শীতে সপ্তাহে ১-২ বার যথেষ্ট।"
+    "short": "Water your plant properly",
+    "description": "Water the plant when the top 1 inch of soil is dry. Overwatering can cause root rot, so make sure the drainage is good. In summer, water 2-3 times per week and in winter, 1-2 times per week is sufficient."
   },
   {
     "id": 2,
     "title": "☀️ Sunlight Needs",
-    "short": "আলো ঠিকভাবে দিন",
-    "description": "বেশিরভাগ ইনডোর গাছ অপরোক্ষ সূর্যালোক পছন্দ করে। জানালার পাশে রাখলে গাছ সবচেয়ে ভালো বেড়ে ওঠে। সরাসরি রোদে রাখলে পাতাগুলো পুড়ে যেতে পারে।"
+    "short": "Provide proper light",
+    "description": "Most indoor plants prefer indirect sunlight. Place them near a window for optimal growth. Avoid direct sunlight as it can burn the leaves."
   },
   {
     "id": 3,
     "title": "🌱 Fertilizing Guide",
-    "short": "গাছকে পুষ্টি দিন",
-    "description": "প্রতি মাসে একবার অর্গানিক সার বা লিকুইড ফার্টিলাইজার ব্যবহার করুন। অতিরিক্ত সার ব্যবহার করলে পাতার ডগা পোড়ে যেতে পারে, তাই সীমিত রাখুন।"
+    "short": "Provide nutrients to your plant",
+    "description": "Use organic fertilizer or liquid fertilizer once a month. Excess fertilizer can burn leaf tips, so apply sparingly."
   },
   {
     "id": 4,
     "title": "🪴 Repotting",
-    "short": "গাছের পাত্র পরিবর্তন",
-    "description": "প্রতি ১ থেকে ২ বছরে একবার পাত্র পরিবর্তন করুন। নতুন পাত্রে ভালো ড্রেনেজ রাখতে হবে এবং আগের চেয়ে সামান্য বড় পাত্র নিন যাতে গাছ আরাম পায়।"
+    "short": "Change the plant pot",
+    "description": "Repot your plant every 1-2 years. Ensure good drainage in the new pot and choose a slightly larger pot than the previous one for the plant to grow comfortably."
   },
   {
     "id": 5,
     "title": "🧼 Pest Control",
-    "short": "পোকামাকড় নিয়ন্ত্রণ করুন",
-    "description": "পাতার নিচে যদি ছোট পোকা বা দাগ দেখেন, তাহলে হালকা সাবান মিশ্রিত পানি স্প্রে করুন। প্রয়োজনে প্রাকৃতিক ইনসেক্টিসাইড ব্যবহার করতে পারেন।"
+    "short": "Control pests",
+    "description": "If you see small insects or spots under the leaves, spray with mild soapy water. You can also use natural insecticides if needed."
   },
   {
     "id": 6,
     "title": "🌡️ Temperature & Humidity",
-    "short": "সঠিক তাপমাত্রা ও আর্দ্রতা রাখুন",
-    "description": "বেশিরভাগ ইনডোর গাছ ১৮°C থেকে ২৫°C তাপমাত্রা পছন্দ করে। ঘরের আর্দ্রতা বজায় রাখতে মাঝে মাঝে স্প্রে করতে পারেন বা হিউমিডিফায়ার ব্যবহার করুন।"
+    "short": "Maintain proper temperature & humidity",
+    "description": "Most indoor plants prefer temperatures between 18°C to 25°C. Maintain room humidity by occasionally spraying water or using a humidifier."
   },
   {
     "id": 7,
     "title": "🍂 Pruning & Cleaning",
-    "short": "নিয়মিত গাছের পরিচর্যা করুন",
-    "description": "শুকনো বা পচা পাতা ছেঁটে ফেলুন। মাঝে মাঝে ভেজা কাপড় দিয়ে পাতাগুলো পরিষ্কার করুন যাতে আলো ভালোভাবে শোষণ করতে পারে।"
+    "short": "Regular plant maintenance",
+    "description": "Trim dry or damaged leaves. Occasionally clean the leaves with a damp cloth to help them absorb light properly."
   },
   {
     "id": 8,
     "title": "💨 Air Circulation",
-    "short": "গাছের জন্য পর্যাপ্ত বাতাস দিন",
-    "description": "গাছের চারপাশে হালকা বাতাস চলাচল নিশ্চিত করুন। এটি ছত্রাক এবং ফাঙ্গাসের বৃদ্ধি রোধ করে এবং গাছকে সতেজ রাখে।"
+    "short": "Provide sufficient air",
+    "description": "Ensure gentle air movement around your plants. This helps prevent fungi and keeps the plant fresh."
   },
   {
     "id": 9,
     "title": "🌸 Flowering & Blooming",
-    "short": "ফুল ফোটানো ও বৃদ্ধি",
-    "description": "ফুল ফোটানোর জন্য পর্যাপ্ত আলো এবং সঠিক সার ব্যবহার জরুরি। সপ্তাহে একবার লিকুইড ফার্টিলাইজার দিন এবং গাছের শাখা বা পাতা ঠিকমতো ছেঁটে রাখুন। গরম বা ঠান্ডা বাতাস সরাসরি ফুলের উপর না পড়া নিশ্চিত করুন।"
+    "short": "Encourage flowers and blooms",
+    "description": "For flowering, provide adequate light and proper fertilization. Apply liquid fertilizer once a week and prune branches or leaves as needed. Avoid exposing flowers to direct hot or cold air."
   }
 ]

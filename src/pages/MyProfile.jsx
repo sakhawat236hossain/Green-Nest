@@ -1,4 +1,3 @@
-// Imports
 import React, { useContext, useRef, useState } from "react";
 import { AuthContext, auth } from "../provider/AuthProvider";
 import { updateEmail } from "firebase/auth";
@@ -15,11 +14,7 @@ const MyProfile = () => {
   const handleUpdate = async (e) => {
     e.preventDefault();
     const currentUser = auth.currentUser;
-
-    if (!currentUser) {
-      toast.error("User not found!");
-      return;
-    }
+    if (!currentUser) return toast.error("User not found!");
 
     const newName = nameRef.current.value.trim();
     const newEmail = emailRef.current.value.trim();
@@ -37,7 +32,6 @@ const MyProfile = () => {
         await updateEmail(currentUser, newEmail);
       }
 
-      // Update context user data
       setUser({
         ...currentUser,
         displayName: newName || currentUser.displayName,
@@ -48,54 +42,64 @@ const MyProfile = () => {
       toast.success("Profile updated successfully!");
       setEditMode(false);
     } catch (err) {
-      console.error("Update failed:", err);
+      console.error(err);
       if (err.code === "auth/requires-recent-login") {
         toast.error("Please login again to update your profile.");
       } else {
-        toast.error("Failed: " + err.message);
+        toast.error("Update failed: " + err.message);
       }
     }
   };
 
   return (
-    <div className="flex justify-center items-start">
-      <title>Profile Page</title>
+    <div className="flex justify-center items-start py-10 bg-gray-900 min-h-screen">
+      <title>My Profile | GreenNest</title>
+
       <div className="w-full max-w-4xl flex flex-col lg:flex-row gap-6">
-        {/* Left card */}
+        {/* Left Card: User info */}
         <div className="lg:w-1/3 p-8 flex flex-col items-center gap-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
           <div className="w-32 h-32 rounded-full flex items-center justify-center overflow-hidden border-4 border-gray-600 bg-white shadow-inner">
-            {user?.photoURL && (
+            {user?.photoURL ? (
               <img
                 src={user.photoURL}
                 alt="Profile"
                 className="w-full h-full object-cover rounded-full"
               />
+            ) : (
+              <FaUser className="w-16 h-16 text-gray-400" />
             )}
           </div>
+
           <h2 className="text-2xl font-bold flex items-center gap-2 text-gray-100">
             <FaUser /> {user?.displayName || "Your Name"}
           </h2>
           <p className="flex items-center gap-2 text-gray-300">
             <FaEnvelope /> {user?.email || "Your Email"}
           </p>
+
+          {!editMode && (
+            <button
+              className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg flex items-center gap-2 text-white font-semibold mt-4"
+              onClick={() => setEditMode(true)}
+            >
+              Edit Profile <FaUserEdit />
+            </button>
+          )}
         </div>
 
-        {/* Right form */}
-        <div className="flex-1 p-8 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-semibold text-gray-100">My Profile</h2>
-            {!editMode && (
+        {/* Right Card: Edit form */}
+        {editMode && (
+          <div className="flex-1 p-8 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-3xl font-semibold text-gray-100">Edit Profile</h2>
               <button
-                className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg flex items-center gap-2 text-white font-semibold"
-                onClick={() => setEditMode(true)}
+                className="text-gray-400 hover:text-gray-100"
+                onClick={() => setEditMode(false)}
               >
-                Update Profile <FaUserEdit />
+                ✕
               </button>
-            )}
-          </div>
+            </div>
 
-          {/* Show input fields only if editMode is true */}
-          {editMode && (
             <form onSubmit={handleUpdate} className="space-y-6">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {/* Name */}
@@ -124,8 +128,8 @@ const MyProfile = () => {
                   />
                 </div>
 
-                {/* Photo */}
-                <div className="flex flex-col">
+                {/* Photo URL */}
+                <div className="flex flex-col lg:col-span-2">
                   <label className="flex items-center gap-2 mb-1 text-gray-200">
                     <FaImage /> Photo URL
                   </label>
@@ -145,8 +149,8 @@ const MyProfile = () => {
                 <FaCheck /> Update Profile
               </button>
             </form>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

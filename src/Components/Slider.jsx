@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import "./slider.css"; 
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
+import { FaArrowRight } from "react-icons/fa";
 
 import plant1 from "../assets/plant1.jpg";
 import plant2 from "../assets/plant2.jpg";
@@ -13,70 +14,147 @@ import plant4 from "../assets/plant4.jpg";
 import plant5 from "../assets/plant5.jpg";
 import plant6 from "../assets/plant6.jpg";
 
-const Slider = () => {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
+const slides = [
+  {
+    image: plant1,
+    title: "Bring Nature Home",
+    subtitle: "Fill your home with fresh greenery and calm energy",
+  },
+  {
+    image: plant2,
+    title: "Fresh Indoor Plants",
+    subtitle: "Perfect plants for a healthier lifestyle",
+  },
+  {
+    image: plant3,
+    title: "Grow Happiness",
+    subtitle: "Create peaceful spaces with GreenNest plants",
+  },
+  {
+    image: plant4,
+    title: "Plant Care Made Easy",
+    subtitle: "Simple care, beautiful results",
+  },
+  {
+    image: plant5,
+    title: "Transform Your Space",
+    subtitle: "Add life and elegance to your home",
+  },
+  {
+    image: plant6,
+    title: "Eco Living",
+    subtitle: "Breathe better with natural air-purifying plants",
+  },
+];
 
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    if (progressCircle.current) progressCircle.current.style.setProperty('--progress', 1 - progress);
-    if (progressContent.current) progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+const Slider = () => {
+  const [current, setCurrent] = useState(0);
+  const [typedTitle, setTypedTitle] = useState("");
+  const [typedSubtitle, setTypedSubtitle] = useState("");
+
+  // Update current index when slide changes
+  const handleSlideChange = (swiper) => {
+    setCurrent(swiper.realIndex);
   };
 
-  const slides = [
-    { slogan: "Bring Nature Home – Let your space breathe life with indoor plants.", img: plant1 },
-    { slogan: "Fresh Indoor Plants for Your Home – Perfect companions for your living space.", img: plant2 },
-    { slogan: "Grow Happiness with GreenNest – Nurture joy, peace, and greenery.", img: plant3 },
-    { slogan: "Indoor Plants Made Easy – Enjoy a greener lifestyle with tips and top-quality plants.", img: plant4 },
-    { slogan: "Transform Your Living Space – Add a touch of nature and elegance.", img: plant5 },
-    { slogan: "Eco-Friendly & Healthy – Improve air quality with beautiful indoor greenery.", img: plant6 },
-  ];
+  // Typewriter effect
+  useEffect(() => {
+    const title = slides[current].title;
+    const subtitle = slides[current].subtitle;
+
+    setTypedTitle("");
+    setTypedSubtitle("");
+
+    let t = 0;
+    let s = 0;
+
+    const titleInterval = setInterval(() => {
+      setTypedTitle((prev) => prev + title[t]);
+      t++;
+      if (t === title.length) clearInterval(titleInterval);
+    }, 90);
+
+    const subtitleTimeout = setTimeout(() => {
+      const subInterval = setInterval(() => {
+        setTypedSubtitle((prev) => prev + subtitle[s]);
+        s++;
+        if (s === subtitle.length) clearInterval(subInterval);
+      }, 40);
+    }, title.length * 90 + 300);
+
+    return () => {
+      clearInterval(titleInterval);
+      clearTimeout(subtitleTimeout);
+    };
+  }, [current]);
 
   return (
-    <div className="w-full relative">
+    <div>
 
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 4500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="relative z-10 mySwiper"
+        onSlideChange={handleSlideChange}
+        className="rounded-xl shadow-xl"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div 
-              className="relative w-full h-[250px] md:h-[400px] lg:h-[500px] flex justify-center items-center bg-cover bg-center"
-              style={{ backgroundImage: `url(${slide.img})` }}
-            >
-              {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+            <div
+             className="relative w-full h-[240px] md:h-[380px] lg:h-[480px] flex items-center justify-center bg-cover bg-center"
 
-              {/* Text with colorful background */}
-              <p className="relative text-white text-sm md:text-lg lg:text-2xl font-bold text-center px-4 md:px-8 lg:px-20 py-2 md:py-4 rounded-lg bg-green-600/30 hover:bg-green-600/50 transition-all duration-500">
-                {slide.slogan}
-              </p>
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+              {/* Text */}
+              {index === current && (
+                <div className="relative text-center text-white px-6">
+
+                  <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-2 tracking-wide">
+                    {typedTitle}
+                  </h2>
+
+                  <p className="text-sm md:text-lg lg:text-xl text-green-200 mb-5">
+                    {typedSubtitle}
+                  </p>
+
+                  {/* Button */}
+                  <motion.a
+                    href="/plants"
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 0 12px rgba(0,255,0,0.7)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex items-center gap-2 px-5 py-2 md:px-7 md:py-3
+                      bg-green-600 hover:bg-green-500 text-white font-semibold rounded-full
+                      transition shadow-md"
+                  >
+                    Explore Plants <FaArrowRight />
+                  </motion.a>
+
+                </div>
+              )}
             </div>
           </SwiperSlide>
         ))}
-
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20" stroke="limegreen" strokeWidth="4" fill="transparent"/>
-          </svg>
-          <span ref={progressContent} className="text-white font-bold ml-2"></span>
-        </div>
       </Swiper>
 
-      {/* Hide arrows on mobile/tablet */}
+      {/* Hide arrows on mobile */}
       <style>{`
-        .swiper-button-next, .swiper-button-prev {
-          color: limegreen;
+        .swiper-button-next,
+        .swiper-button-prev {
+          color: #22c55e;
           display: none;
         }
-        @media(min-width: 768px) {
-          .swiper-button-next, .swiper-button-prev {
+        @media (min-width: 768px) {
+          .swiper-button-next,
+          .swiper-button-prev {
             display: block;
           }
         }

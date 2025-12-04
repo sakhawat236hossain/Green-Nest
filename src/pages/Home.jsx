@@ -13,17 +13,17 @@ const Home = () => {
   const plantsData = useLoaderData();
 
   return (
-    <div className="mt-5">
+    <div>
       <title>Home</title>
 
       {/* Slider Section */}
-      <section className="mb-16">
+      <section className="mb-5">
         <Slider />
       </section>
 
       {/* Top Rated Indoor Plants */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center text-green-800 mb-12 drop-shadow-lg">
             🌿 Top Rated Indoor Plants
           </h2>
@@ -44,7 +44,7 @@ const Home = () => {
       </section>
 
       {/* Plant Of The Week */}
-      <section className="py-16 bg-gradient-to-b from-green-100 via-green-50 to-white relative overflow-hidden">
+      <section className="py-16 bg-gradient-to-b from-green-100 via-green-50 to-white relative overflow-hidden rounded-2xl">
         <PlantOfTheWeek />
         {/* Decorative Floating Circles */}
         <div className="absolute -top-16 -left-16 w-48 h-48 bg-green-200 rounded-full opacity-30 blur-3xl animate-pulse"></div>
@@ -52,12 +52,12 @@ const Home = () => {
       </section>
 
       {/* Meet Our Green Experts */}
-      <section className="py-16">
+      <section className="py-16 ">
         <ExpertPlant />
       </section>
 
       {/* Plant Care Tips */}
-      <section className="py-16 bg-gradient-to-b from-green-50 via-green-100 to-green-50">
+      <section className="py-16 bg-gradient-to-b from-green-50 via-green-100 to-green-50 rounded-2xl">
         <PlantTips />
       </section>
 

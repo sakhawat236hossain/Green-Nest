@@ -52,8 +52,8 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 text-sm text-gray-300">
             <li><a href="/faq" className="hover:text-green-300 transition-all duration-200">FAQ</a></li>
             <li><a href="/contact" className="hover:text-green-300 transition-all duration-200">Contact Us</a></li>
-            <li><a href="/privacy-policy" className="hover:text-green-300 transition-all duration-200">Privacy Policy</a></li>
-            <li><a href="/terms" className="hover:text-green-300 transition-all duration-200">Terms of Service</a></li>
+            <li><a href="/" className="hover:text-green-300 transition-all duration-200">Privacy Policy</a></li>
+            <li><a href="/" className="hover:text-green-300 transition-all duration-200">Terms of Service</a></li>
           </ul>
         </div>
 
