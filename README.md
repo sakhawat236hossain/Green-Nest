@@ -1,3 +1,19 @@
+## Live link
+::https://greenmin.netlify.app/
+
+***💻Technologies Used***
+React.js
+Tailwind CSS
+Firebase Authentication
+Swiper.js / Framer Motion
+
+
+## 📫 Contact
+
+**Md Sakhawat Hossin**  
+GitHub:(https://github.com/sakhawat236hossain) 
+Email:hmdsakhawat236@gmail.com
+
 <img width="1438" height="742" alt="image" src="https://github.com/user-attachments/assets/c6adb38c-5398-43a5-b287-b68481cf80ee" />
 
 
@@ -68,7 +84,7 @@ With features like Firebase Authentication, private route protection, dynamic JS
 ### 2. JSON Data Setup
 
 - `plants.json` file containing at least 6 indoor plant objects with fields:
-  - `plantId, plantName, category, price, rating, description, image, availableStock, careLevel, providerName`
+  - `plantId, plantName, category, price, rating, description, image, availableStock, careLevel, providerName.`
 - **Example:**
 
 
@@ -86,18 +102,3 @@ With features like Firebase Authentication, private route protection, dynamic JS
     "providerName": "UrbanGreen Studio"
   }
 ]
-## Live link
-::https://greenmin.netlify.app/
-
-***💻Technologies Used***
-React.js
-Tailwind CSS
-Firebase Authentication
-Swiper.js / Framer Motion
-
-
-## 📫 Contact
-
-**Md Sakhawat Hossin**  
-GitHub:(https://github.com/sakhawat236hossain) 
-Email:hmdsakhawat236@gmail.com
